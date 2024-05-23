@@ -1,0 +1,114 @@
+body {
+    background-image: url('./assets/img/backg\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    align-items: center;
+    position: relative;
+    display: flex; 
+    margin: 25px auto;
+    width: 350px;
+    height: 500px;
+    border: 1px solid #3a3838;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 5px 5px 5px #313030;
+}
+
+.container-login {
+    margin: 28px;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px 30px;
+}
+
+.wrap-login {
+    text-align: center;
+}
+
+.forms-login {
+    text-decoration: none;
+    height: 500px;
+}
+
+.input-warp {
+    font-size: 18px;
+    justify-content: space-between;
+    margin: 30px;
+    height: 40px;
+    max-width: 100%;
+}
+
+.imagem {
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+
+.inputpass {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.inputpass:focus {
+    border-bottom: 2px solid #0acde7;
+    transition: 1s;
+}
+
+.btn-login {
+    margin: 13px;
+    font-weight: bold;
+    border-radius: 8%;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: rgb(115, 192, 216);
+    border: none;
+    border: 2px solid #1f1e1e;
+    box-shadow: 3px 3px 5px #313030;
+}
+
+.btn-login:hover {
+    background-color: #a2d6ce;
+}
+
+.textlogin {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* quando for menor que 668px fique responsivo para celular do jeito que coloquei abaixo */
+@media (max-width: 668px) {
+
+    .container {
+        align-items: center;
+        display: flex; 
+        margin: 25px auto;
+        width: 270px;
+        height: 500px;
+        font-size: 18px;
+        box-shadow: 3px 3px 3px rgb(77, 76, 75);
+    }
+
+    .inputpass {
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #000;
+        font-size: .9rem;
+        margin: -8px;
+    }
+  }
